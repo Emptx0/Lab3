@@ -1,0 +1,7 @@
+__pycache__/
+
+.idea
+*.log
+venv
+Python/.venv/
+*.session
