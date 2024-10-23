@@ -3,5 +3,5 @@ __pycache__/
 .idea/
 *.log
 venv
-.venv/
+Python/.venv/
 *.session
