@@ -21,6 +21,9 @@ class EatableMushroom(Mushroom):
         super().__init__(name)
         self._eatable = True
 
+    def __str__(self):
+        return f"{self._name}, true, 0 minutes"
+
     def get_name(self):
         return self._name
 
@@ -33,6 +36,9 @@ class PoisonousMushroom(Mushroom):
         super().__init__(name)
         self._eatable = False
         self._treatment = treatment
+
+    def __str__(self):
+        return f"{self._name}, false, {self._treatment} minutes"
 
     def get_name(self):
         return self._name
