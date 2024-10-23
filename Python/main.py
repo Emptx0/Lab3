@@ -1,9 +1,10 @@
-from forest import Forest
+from forest import Forest, ForestRepository
 
 
 def main():
+    repository = ForestRepository('MushroomsList.txt')
     forest = Forest()
-    forest.load_mushrooms_list('MushroomsList.txt')
+    repository.load_mushrooms_list(forest)
 
 
 if __name__ == "__main__":
